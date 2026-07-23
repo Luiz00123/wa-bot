@@ -8,4 +8,4 @@ services:
       - key: PHONE
         value: "255662229320"
       - key: OPENROUTER_KEY
-        value: "sk-or-v1-xxxxxxxx"
+        fromSecret: OPENROUTER_KEY
