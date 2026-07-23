@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: wa-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: PHONE
+        value: "255662229320"
+      - key: OPENROUTER_KEY
+        value: "sk-or-v1-xxxxxxxx"
